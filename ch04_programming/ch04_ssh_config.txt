@@ -1,0 +1,6 @@
+Host robot
+    HostName raspberrypi.local
+    User pi
+    IdentityFile ~/.ssh/id_ed25519
+
+# now simply:  ssh robot

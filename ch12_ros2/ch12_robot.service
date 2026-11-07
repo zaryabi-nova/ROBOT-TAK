@@ -1,0 +1,12 @@
+[Unit]
+Description=Robot ROS 2 bringup
+After=network-online.target docker.service
+
+[Service]
+User=user
+Environment=ROS_DOMAIN_ID=7
+ExecStart=/bin/bash -c "source /opt/ros/jazzy/setup.bash && source /home/user/ros2_ws/install/setup.bash && ros2 launch robot_basics robot_bringup.launch.py"
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

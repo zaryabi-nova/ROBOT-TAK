@@ -1,0 +1,7 @@
+# Request: new speed limits
+float32 max_linear
+float32 max_angular
+---
+# Response
+bool success
+string message

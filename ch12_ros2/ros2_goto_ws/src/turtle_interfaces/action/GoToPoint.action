@@ -1,0 +1,10 @@
+# Goal: target position in the turtlesim world (0..11)
+float32 x
+float32 y
+---
+# Result: sent once when the goal finishes
+bool success
+float32 final_distance
+---
+# Feedback: sent repeatedly while the turtle is moving
+float32 distance_remaining

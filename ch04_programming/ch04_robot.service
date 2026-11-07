@@ -1,0 +1,12 @@
+[Unit]
+Description=Robot control program
+After=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/robot
+ExecStart=/home/pi/robot/env/bin/python main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
